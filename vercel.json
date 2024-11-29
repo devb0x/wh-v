@@ -1,0 +1,23 @@
+{
+	"version": 2,
+	"builds": [
+		{
+			"src": "dist/wharmy/browser/browser/**/*",
+			"use": "@vercel/static"
+		},
+		{
+			"src": "api/**",
+			"use": "@vercel/node"
+		}
+	],
+	"routes": [
+		{
+			"src": "/(.*)",
+			"dest": "/dist/wharmy/browser/browser/$1"
+		},
+		{
+			"src": "/api/(.*)",
+			"dest": "/api/$1"
+		}
+	]
+}
