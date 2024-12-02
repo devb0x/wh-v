@@ -20,7 +20,6 @@
 			"dest": "/api/$1"
 		}
 	],
-	"outputDirectory": "dist/wharmy/browser/browser",
 	"headers": [
 		{
 			"source": "/api/(.*)",
