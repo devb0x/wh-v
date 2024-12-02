@@ -42,3 +42,4 @@ Thumbs.db
 /src/app/sandbox/
 nodemon.json
 .vercel
+/api/node_modules/
