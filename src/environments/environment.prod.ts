@@ -1,4 +1,4 @@
 export const environment = {
 	production: true,
-	apiUrl: 'https://wh-v.vercel.app/api'
+	apiUrl: "https://wharmyy.vercel.app/api", // Correct backend URL
 };
