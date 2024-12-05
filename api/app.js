@@ -2,11 +2,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-const userRoutes = require('./routes/user');
-const armyRoutes = require('./routes/army');
-const uploadRoutes = require('./routes/upload');
-const pictureRoutes = require('./routes/picture');
-const miniatureRoutes = require('./routes/miniature');
+const userRoutes = require('../routes/user');
+const armyRoutes = require('../routes/army');
+const uploadRoutes = require('../routes/upload');
+const pictureRoutes = require('../routes/picture');
+const miniatureRoutes = require('../routes/miniature');
 
 const app = express();
 

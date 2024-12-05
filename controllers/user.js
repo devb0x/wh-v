@@ -6,8 +6,8 @@ const crypto = require('crypto')
 const User = require('../models/user')
 
 const { getNextSequenceValue } = require("../utils/counterHelper")
-const sendVerificationEmail = require("../../src/app/utils/sendVerificationEmail")
-const sendResetPasswordEmail = require("../../src/app/utils/sendResetPasswordEmail")
+const sendVerificationEmail = require("../src/app/utils/sendVerificationEmail")
+const sendResetPasswordEmail = require("../src/app/utils/sendResetPasswordEmail")
 
 exports.createUser = async (req, res, next) => {
 	const verificationToken = crypto.randomBytes(32).toString('hex'); // Generate token

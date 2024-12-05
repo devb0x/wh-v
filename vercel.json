@@ -1,20 +1,9 @@
 {
 	"version": 2,
-	"builds": [
-		{
-			"src": "dist/wharmy/browser/**/*",
-			"use": "@vercel/static"
-		},
-		{
-			"src": "api/**",
-			"use": "@vercel/node"
-		}
-	],
-	"outputDirectory": "dist/wharmy/browser/browser",
 	"rewrites": [
 		{
 			"source": "/(.*)",
-			"destination": "/dist/wharmy/browser/browser/$1"
+			"destination": "/"
 		},
 		{
 			"source": "/api/(.*)",
